@@ -1,0 +1,142 @@
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  color: white;
+  color: rgba(0,0,0,0.8);
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.welcome {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20;
+  color: white;
+  color: rgba(0,0,0,.75);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu {
+  padding: 5px 30px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background-color: rgba(255, 100, 0, .7);
+}
+
+.menu button {
+  transition: .15s;
+  background: white;
+  width: 100px;
+  height: 30px;
+  border: 3px solid white;
+  color: rgba(255, 100, 0, .7);
+  padding: 0;
+  font-size: 18px;
+  font-style: bold;
+  vertical-align: middle;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 15px;
+}
+
+.menu button:hover {
+  transition: .15s;
+  transform: scale(1.05);
+}
+
+.menu input {
+  background: white;
+  width: 100px;
+  height: 30px;
+  margin: 0 15px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+.field {
+  margin: 50px auto;
+  height: 60vh;
+  width: 60vh;
+  background-color: rgba(200, 200, 200);
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 10px solid rgba(200, 200, 200);
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.field button {
+  transition: 0.15s;
+  height: 19vh;
+  width: 19vh;
+  background: white;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-style: bold;
+  font-size: 5vh;
+}
+
+.field button:hover {
+  transition: 0.15s;
+  background: rgba(230, 230, 255, 0.9);
+}
+
+.overlay {
+  visibility: hidden;
+  transition: 0.15s;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(255, 255, 255, .5);
+}
+
+.overlay.is-visible {
+  visibility: visible;
+  transition: 0.15s;
+  opacity: 1;
+}
+
+.overlay .spinner {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50px,-50px);
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background: none;
+  border-top: 10px solid rgba(255, 100, 0, .9);
+  color: rgba(255, 100, 0, .9);
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

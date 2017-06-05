@@ -1,0 +1,15 @@
+{
+  "name": "tictactoe",
+  "version": "0.1.0",
+  "description": "",
+  "main": "TicTacToe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "clone": "^2.1.1",
+    "synaptic": "^1.0.11"
+  }
+}
